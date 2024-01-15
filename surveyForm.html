@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Thank you for taking the time to provide your feedback. Your opinion will help us improve our services.</p>
+  
+    <form id="form">
+        <label for="name">Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label for="email">Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="number">Age: <input id="number" type="number" min="18" max="110" placeholder="Enter your age" /></label>
+        
+        <label for="dropdown">What is your current employment status?
+            <select id="dropdown">
+                <option value="" disabled selected>Select an option</option>
+                <option>Self-employed</option>
+                <option>Employed</option>
+                <option>Unemployed</option>
+                <option>Student</option>
+                <option>Prefer not to answer</option>
+            </select>
+        </label>
+        <fieldset>
+            <legend>How satisfied are you with our services? </legend>
+            <label for="satisfaction-1"><input type="radio" id="satisfaction-1" value="satisfaction-level-1" name="satisfaction-level" class="inline">Fully satisfied</label>
+            <label for="satisfaction-2"><input type="radio" id="satisfaction-2" value="satisfaction-level-2" name="satisfaction-level" class="inline">Satisfied</label>
+            <label for="satisfaction-3"><input type="radio" id="satisfaction-3" value="satisfaction-level-3" name="satisfaction-level" class="inline">Not so satisfied</label>
+            <label for="satisfaction-4"><input type="radio" id="satisfaction-4" value="satisfaction-level-4" name="satisfaction-level" class="inline">Dissatisfied</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which of our services do you use or have used in the past?</legend>
+            <label for="mobile"><input type="checkbox" id="mobile" value="1" class="inline" />Mobile</label>
+            <label for="broadband"><input type="checkbox" id="broadband" value="2" class="inline" />Broadband</label>
+            <label for="TV"><input type="checkbox" value="3" id="TV" class="inline" />TV</label>
+        </fieldset>
+        <label for="feedback">Do you have any further feedback?
+            <textarea id="feedback" placeholder="Enter your comment"></textarea>
+        </label>
+        <button type="submit" id="submit">Submit</button>
+        </form>
+</body>
+
+</html>
